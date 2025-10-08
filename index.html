@@ -16,7 +16,7 @@
         <meta name="twitter:image:alt" content="describe the image"/>
         <meta name="twitter:creator" content="@username"/>
         <meta name="twitter:site" content="@username"/>
-        <link rel="stylesheet" src="style.css"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="icon" type="image/png" href="link"/>
         <link rel="alternate" href="link" hreflang="insert language"/>
         <link rel="alternate" href="link" hreflang="insert language"/>
@@ -24,7 +24,7 @@
         <link rel="manifest" href="/mlwanifest.json"/>
     </head>
     <body>
-        <header>
+        <header class="flex-container flex-space-between flex-align-items-center">
             <h1>Eric Harris</h1>
             <nav>
                 <a href="#developer">Developer</a>
@@ -34,38 +34,44 @@
             </nav>
         </header>
         <main>
-            <h2>Developer.Runner.Gamer.Fanatic.</h2>
-            <p>eighty words</p>
-            <nav>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#autodidact">Education</a>
-                <a href="#more">Self-taught</a>
-            </nav>
-            <section id="skills" class="flex-container">
-                <h3>Skills</h3>
-                <blurb class="flex-1">
-                    <img src="icon" alt="alt">
-                    <h3>two words</h3>
-                    <p>three lines</p>
-                </blurb>
-                <blurb class="flex-1">
-                    <img src="icon" alt="alt">
-                    <h3>two words</h3>
-                    <p>three lines</p>
-                </blurb>
-                <blurb class="flex-1">
-                    <img src="icon" alt="alt">
-                    <h3>two words</h3>
-                    <p>three lines</p>
-                </blurb>
-                <blurb class="flex-1">
-                    <img src="icon" alt="alt">
-                    <h3>two words</h3>
-                    <p>three lines</p>
-                </blurb>
+            <section class="flex-container">
+                <div class="flex-2 flex-direction-column">
+                    <h2>Developer. Runner. Gamer. Fanatic.</h2>
+                    <p>eighty words</p>
+                </div>
+                <ul class="flex-1 list-style-type-none">
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#autodidact">Education</a></li>
+                        <li><a href="#more">Self-taught</a></li>
+                </ul>
             </section>
-            <section id="experience" class="flex-container">
+            <section id="skills">
+                <h3 class="text-align-center">Skills</h3>
+                <div class="flex-container text-align-center">
+                    <div class="flex-1">
+                        <img src="icon" alt="alt">
+                        <h3>two words</h3>
+                        <p>three lines</p>
+                    </div>
+                    <div class="flex-1">
+                        <img src="icon" alt="alt">
+                        <h3>two words</h3>
+                        <p>three lines</p>
+                    </div>
+                    <div class="flex-1">
+                        <img src="icon" alt="alt">
+                        <h3>two words</h3>
+                        <p>three lines</p>
+                    </div>
+                    <div class="flex-1">
+                        <img src="icon" alt="alt">
+                        <h3>two words</h3>
+                        <p>three lines</p>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
                 <h3>Experience</h3>
                 <div>    
                     <h4>job one</h4>
@@ -112,7 +118,7 @@
             <img src="image" alt="alt">
             </section>
             <section id="autodidact" class="flex-container">
-                <h3>I am self-taught</h3>
+                <h3>>I am self-taught</h3>
                     <div>
                         <h4>Education one</h4>
                         <h5>degree</h5>
