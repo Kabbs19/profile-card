@@ -1,3 +1,9 @@
+@import url("satoshi.css");
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: blue;      /* makes link text use the surrounding text color */
