@@ -208,7 +208,13 @@
   .nowrap { white-space: nowrap; }
   .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-  /* Spacing utilities (example subset) */
+  /* Spacing utilities */
+  
+  /* Margin */
+  .m-1 { margin: var(--space-1); }
+  .mt-1 { margin-top: var(--space-1); } .mr-1 { margin-right: var(--space-1);}
+  .mb-1 { margin-bottom: var(--space-1); } .ml-1 {margin-left: var(--space-1);}
+
   .mt-4 { margin-top: var(--space-4); } .mb-4 { margin-bottom: var(--space-4); }
   .pt-4 { padding-top: var(--space-4); } .pb-4 { padding-bottom: var(--space-4); }
   .p-4 { padding: var(--space-4); } .p-5 { padding: var(--space-5); }
@@ -245,56 +251,39 @@
 
 /* Project specific CSS */
 
+.white-text {
+  color: var(--white);
+}
+
+.black-bg {
+  background-color: var(--black);
+}
+
+.gray-bg {
+  background-color: var(--gray);
+}
+
 .list-style-type-none {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.flex-container {
-    display: flex;
+.text-align-center {
+    text-align: center;
 }
 
-.flex-1 {
-    flex: 1 1 0;
-}
+/* Flexbox */
 
-.flex-2 {
-    flex: 2 1 0;
-}
+.flex-container { display: flex; } .flex-1 { flex: 1 1 0; } .flex-2 { flex: 2 1 0; }
+.flex-direction-column { flex-direction: column; } .flex-space-evenly { justify-content: space-evenly; }
+.flex-space-between { justify-content: space-between; } .flex-justify-content-center { justify-content: center; }
+.flex-align-stretch { align-items: stretch; } .flex-align-items-base { align-items: baseline; }
+.flex-align-items-center { align-items: center; }
 
-.flex-direction-column {
-    flex-direction: column;
-}
-
-.flex-space-evenly {
-    justify-content: space-evenly;
-}
-
-.flex-space-between {
-    justify-content: space-between;
-}
-
-.flex-justify-content-center {
-    justify-content: center;
-}
-
-.flex-align-stretch {
-    align-items: stretch;
-}
-
-.flex-align-items-base {
-    align-items: baseline;
-}
-
-.flex-align-items-center {
-    align-items: center;
-}
+/* Flex Grid */
 
 .flex-grid {
     display: grid;
 }
 
-.text-align-center {
-    text-align: center;
-}
