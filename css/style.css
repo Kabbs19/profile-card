@@ -161,14 +161,57 @@
 
   /* Card */
   .card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content-center;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-1);
-    padding: var(--space-5);
+    padding: var(--space-6);
     container-type: inline-size;
   }
   .card + .card { margin-top: var(--space-4); }
+
+  .sand-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--sand);
+    /*border: 1px solid var(--white);*/
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2);
+    padding: var(--space-5);
+    margin: var(--space-5);
+    container-type: inline-size;
+  }
+
+  .image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--gold);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding-bottom: var(--space-6);
+  margin: var(--space-4);
+  text-align: center;
+  width: 220px; /* defines card width */
+}
+
+.image-card img {
+  width: 100%;
+  height: 280px;              /* fixed height area for image */
+  object-fit: contain;        /* fit entire image inside box */
+  object-position: center;    /* center image inside box */
+  border-radius: var(--radius-lg);
+  background-color: #fff2cc;  /* optional placeholder background */
+  margin-bottom: var(--space-1);
+}
 
   /* Forms */
   :where(label) { font-weight: 600; }
@@ -316,6 +359,10 @@
   background-color: var(--black);
 }
 
+.light-gray-bg {
+  background-color: var(--light-gray);
+}
+
 .gray-bg {
   background-color: var(--gray);
 }
@@ -332,6 +379,46 @@
 
 .text-align-center {
     text-align: center;
+}
+
+/* Buttons */
+
+.gold-btn {
+  min-width: 10rem;
+  text-align: center;
+  background-color: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.gold-btn:hover,
+.gold-btn:focus-visible {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.black-btn {
+  min-width: 10rem;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.black-btn:hover,
+.black-btn:focus-visible {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 /* Flexbox */
